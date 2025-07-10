@@ -4,7 +4,12 @@
     --heading-font: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid #000;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -25,14 +30,21 @@ h1 {
 
 main {
     max-width: 840px;
+    padding: var(--padding);
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: var(--border);
-    padding: 2px;
+    padding: .2rem;
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1.5rem 1rem;
+}
+
+main ul {
+    clear: both;
 }
 
 p {
@@ -40,13 +52,15 @@ p {
 }
 
 aside {
+    position: relative;
     width: 18rem;
-    margin: .8rem;
-    border: 1px solid rgb(0, 0, 0 / .03);
-    padding: .8rem;
-    background-color: var(--background-color);
-    color: white;
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
 }
 
 aside img {
@@ -58,4 +72,13 @@ footer {
     margin-top: 1.4rem;
     border-top: var(--border);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: lavender;
+    color: purple;
 }
