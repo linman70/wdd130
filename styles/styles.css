@@ -1,6 +1,15 @@
+:root {
+    --background-color: #00008b;
+    --heading-text-color: #00008b;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid #000;
+
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--background-color);
+    padding: var(--padding);
 }
 
 nav a {
@@ -10,7 +19,8 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
 }
 
 main {
@@ -20,7 +30,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -34,7 +44,7 @@ aside {
     margin: .8rem;
     border: 1px solid rgb(0, 0, 0 / .03);
     padding: .8rem;
-    background-color: darkblue;
+    background-color: var(--background-color);
     color: white;
     text-align: center;
 }
@@ -46,6 +56,6 @@ aside img {
 
 footer {
     margin-top: 1.4rem;
-    border-top: 1px solid black;
+    border-top: var(--border);
     text-align: center;
 }
