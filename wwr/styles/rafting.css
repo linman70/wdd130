@@ -79,6 +79,7 @@ nav, p, section, article {
 /* Footer */
 .socialmedia a {
     text-decoration: none;
+    width: 50px;
 }
 
 
