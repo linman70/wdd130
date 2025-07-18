@@ -1,6 +1,6 @@
 :root {
-    --background-color: #00008b;
-    --heading-text-color: #00008b;
+    --background-color: #4682b4;
+    --heading-text-color: #4682b4;
     --heading-font: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid #000;
@@ -12,25 +12,50 @@
     box-sizing: border-box;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+
+/* Nav */
 nav {
     background-color: var(--background-color);
     padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    color: white;
+    padding: .4rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
 }
 
+/* Headings */
 h1 {
     color: var(--heading-text-color);
     font-family: var(--heading-font);
+    border-bottom: 2px solid steelblue;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+/* Main */
 main {
-    max-width: 840px;
     padding: var(--padding);
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main img {
@@ -51,10 +76,13 @@ p {
     padding: 0;
 }
 
+/* Aside */
 aside {
     position: relative;
     width: 18rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -68,6 +96,8 @@ aside img {
     height: auto;
 }
 
+
+/* Footer */
 footer {
     margin-top: 1.4rem;
     border-top: var(--border);
@@ -82,3 +112,4 @@ footer {
     background-color: lavender;
     color: purple;
 }
+
